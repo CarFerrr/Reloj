@@ -1,0 +1,30 @@
+
+<div class="container">
+  <label for="clockSelect">Seleccione el tipo de reloj:</label>
+  <select id="clockSelect" [(ngModel)]="selectedClock">
+    <option value="digital">Digital</option>
+    <option value="analog">Analógico</option>
+    <option value="progress">Barras</option>
+    <option value="binary">Binario</option>
+    <option value="text">Texto</option>
+    <option value="circle">Circular</option>
+    <option value="flip">Flip Clock</option>
+    <option value="led">LED</option>
+    <option value="heatmap">Mapa de Calor</option>
+    <option value="calendar">Calendario</option>
+  </select>
+</div>
+
+<div class="clock-container">
+  <!-- Aquí va tu reloj -->
+  <app-digital-clock *ngIf="selectedClock === 'digital'"></app-digital-clock>
+  <app-analog-clock *ngIf="selectedClock === 'analog'"></app-analog-clock>
+  <app-progress-clock *ngIf="selectedClock === 'progress'"></app-progress-clock>
+  <app-binary-clock *ngIf="selectedClock === 'binary'"></app-binary-clock>
+  <app-text-clock *ngIf="selectedClock === 'text'"></app-text-clock>
+  <app-circle-clock *ngIf="selectedClock === 'circle'"></app-circle-clock>
+  <app-flip-clock *ngIf="selectedClock === 'flip'"></app-flip-clock>
+  <app-led-clock *ngIf="selectedClock === 'led'"></app-led-clock>
+  <app-heatmap-clock *ngIf="selectedClock === 'heatmap'"></app-heatmap-clock>
+  <app-calendar-clock *ngIf="selectedClock === 'calendar'"></app-calendar-clock>
+</div>

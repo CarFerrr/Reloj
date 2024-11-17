@@ -1,0 +1,54 @@
+.circle-clock {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.circle-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-svg {
+  width: 100px;
+  height: 100px;
+}
+
+.bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3;
+}
+
+.arc {
+  fill: none;
+  stroke-width: 6;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.hour {
+  stroke: #f44336; /* Rojo para las horas */
+}
+
+.minute {
+  stroke: #4caf50; /* Verde para los minutos */
+}
+
+.second {
+  stroke: #2196f3; /* Azul para los segundos */
+}
+
+.circle-text {
+  position: absolute;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  pointer-events: none; 
+}

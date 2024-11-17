@@ -1,0 +1,10 @@
+.led-clock {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+    color: #00aaff;
+    text-shadow: 0 0 10px #00aaff, 0 0 20px #00aeff, 0 0 30px #00aaff;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+  }

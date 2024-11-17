@@ -1,0 +1,102 @@
+/* Reset general para eliminar márgenes y paddings predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #00000085;
+    color: #060606;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Contenedor principal para centrar la aplicación */
+  .container {
+    max-width: 800px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Encabezados y textos */
+  h1, h2, h3 {
+    color: #0a2e5c;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Botones generales */
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .clock-container {
+    background-color: #f0f4ff; /* Fondo suave */
+    border: 2px solid #0a2e5c; /* Borde azul */
+    border-radius: 15px; /* Esquinas redondeadas */
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    
+    /* Nuevas propiedades para ajustarse al contenido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+    min-height: 200px;
+    overflow: hidden; /* Evitar que el contenido se salga */
+    transition: all 0.3s ease;
+  }
+  
+  /* Asegurar que los relojes grandes se ajusten al tamaño del contenedor */
+  .clock-container canvas, .clock-container div {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ajustar el contenido al tamaño del contenedor */
+  }
+  
+  /* Estilos para el selector */
+  #clockSelect {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    color: #333;
+    background-color: #e0e7ff;
+    border: 2px solid #0a2e5c;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #clockSelect:hover {
+    background-color: #cfe0ff;
+  }

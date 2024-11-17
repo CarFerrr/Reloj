@@ -1,0 +1,7 @@
+canvas {
+  display: block;
+  margin: 0 auto;
+  background-color: #546172; /* Azul oscuro del reloj */
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}

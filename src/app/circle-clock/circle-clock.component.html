@@ -1,0 +1,28 @@
+<div class="circle-clock">
+  <!-- Horas -->
+  <div class="circle-container">
+    <svg class="circle-svg" viewBox="0 0 36 36">
+      <circle class="bg" cx="18" cy="18" r="15.915"></circle>
+      <circle class="arc hour" [attr.stroke-dasharray]="hours + ', 100'" cx="18" cy="18" r="15.915"></circle>
+    </svg>
+    <div class="circle-text">{{ hourText }}</div>
+  </div>
+
+  <!-- Minutos -->
+  <div class="circle-container">
+    <svg class="circle-svg" viewBox="0 0 36 36">
+      <circle class="bg" cx="18" cy="18" r="15.915"></circle>
+      <circle class="arc minute" [attr.stroke-dasharray]="minutes + ', 100'" cx="18" cy="18" r="15.915"></circle>
+    </svg>
+    <div class="circle-text">{{ minuteText }}</div>
+  </div>
+
+  <!-- Segundos -->
+  <div class="circle-container">
+    <svg class="circle-svg" viewBox="0 0 36 36">
+      <circle class="bg" cx="18" cy="18" r="15.915"></circle>
+      <circle class="arc second" [attr.stroke-dasharray]="seconds + ', 100'" cx="18" cy="18" r="15.915"></circle>
+    </svg>
+    <div class="circle-text">{{ secondText }}</div>
+  </div>
+</div>

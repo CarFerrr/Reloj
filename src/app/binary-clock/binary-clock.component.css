@@ -1,0 +1,23 @@
+.binary-clock {
+    text-align: center;
+  }
+  
+  .row {
+    display: flex;
+    margin: 10px;
+  }
+  
+  .row span {
+    margin-right: 10px;
+  }
+  
+  .row div {
+    width: 20px;
+    height: 20px;
+    background-color: #ddd;
+    margin: 0 5px;
+  }
+  
+  .row div.on {
+    background-color: #4caf50;
+  }
